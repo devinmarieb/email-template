@@ -5,7 +5,6 @@ Copy the index file into an email delivery service of your choice (SendGrid, Mai
 
 The email is broken up into the following sections:
 
-* Hidden preview text
 * Header logo
 * Hero image
 * Body text
