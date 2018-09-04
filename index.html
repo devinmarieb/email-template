@@ -5,36 +5,44 @@
   <!--iPhone 6 through X off-center fix for gmail iOS 11-->
   <meta name="x-apple-disable-message-reformatting">
   <style type="text/css" data-premailer="ignore">
-         /* Font-family declarations must not be inlined */
-        @font-face {
-/*             font-family: '';
-            src: url();
-            font-weight: normal;
-            font-style: normal; */
+         p, span, a, div {
+           font-style: normal !important;
+           font-weight: 400 !important;
          }
-         
-        p, span, a, div {
-          font-family: 'Arial', sans-serif !important;
-          font-style: normal !important;
-          font-weight: 400 !important;
-         }
-         
-        .header {
-          outline: 20px solid #F5EBE1;
-         }
-         
-        .footer {
-          outline: 20px solid #281524;
-         }
-   
+         /* Gmail app for iOS white border fix */
+         .header, 
+         .footer {
+            outline: 30px solid #484848;
+        }
+        
+        .hero {
+          width: 100%;
+          max-width: 640px;
+          min-width: 300px;
+        }
+        
+        .header-col {
+          width: 100%;
+          max-width: 640px;
+          min-width: 300px;
+        }
+        
+        /*iPhone 6, 6+ offcenter fix for gmail iOS 10+*/
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+  	      .email-container {
+            min-width: 375px !important;
+          }
+        }
+
         /*@media only screen and (max-width: 480px) {*/
         /*  body {*/
-            /*adjust font for iphones*/
+        /*    adjust font for iphones*/
         /*    -webkit-text-size-adjust: 120%;*/
-            /*adjust font for ms - not tested*/
+        /*    adjust font for ms - untested*/
         /*    -ms-text-size-adjust: 120%;*/
         /*  }*/
         /*}*/
+        
   </style>
   <!--[if gte mso 9]>
     <xml>
@@ -45,40 +53,36 @@
     </xml>
   <![endif]-->
 </head>
-<body class="body" style="margin: 0; padding: 0; border: none; width: 100%;">
-<!--   <div style="display: none; max-height: 0px; overflow: hidden;">
-    Preview Text
-  </div> -->
+<body class="body" style="margin: 0; padding: 0; background-color: #ffffff; border: none; width: 100%;">
   <!--START EMAIL CONTENT-->
-  <table class="email-container" align="center" cellpadding="0" cellspacing="0" width="100%">
-    <!--START HEADER-->
+  <table class="email-container" align="center" cellpadding="0" cellspacing="0" width="95%" max-width="640" style="background-color: #ffffff;">
     <tr>
       <td>
-        <table class="header" align="center" cellpadding="0" cellspacing="0" width="100%" style="background-color: #F5EBE1; padding: 10px 0 20px 0;">
+        <table class="header" align="center" cellpadding="0" cellspacing="0" width="100%" style="background-color: #484848; padding: 10px 0 20px 0;">
           <tr>
             <td>
-              <table align="center" width="560" cellpadding="0" cellspacing="0" style="padding: 30px 15px 0 15px;">
+              <table align="center" cellpadding="0" cellspacing="0" style="padding: 30px 15px 0 15px;">
                 <!--START COLUMN-->
                 <tr>
-                  <td>
-                    <table border="0" cellpadding="0" cellspacing="0" width="560" style="padding-bottom: 10px; border-bottom: 1px solid #CECAC1;">
+                  <td align="center">
+                    <table class="header-col" border="0" width="640" cellpadding="0" cellspacing="0" style="padding: 30px 0 10px 0; border-bottom: 1px solid #ffffff;">
                       <tr>
-                        <td align="left" width="30%">
-                          <table border="0" cellpadding="5" cellspacing="0" width="100%">
+                        <td align="left" width="15%">
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
                               <td class="leftColumnContent">
                                 <a href="https://wetransfer.com/">
-                                  <img src="https://marketing-image-production.s3.amazonaws.com/uploads/5784892ad6d9e599e8f63163cd55034ba159990c047c23ae95b5e6701624cd3abfeed72668314d3d33d401f3ba570b434d5a5156e449b386be47b8c23fc17105.png" width="34" style="max-width: 280" alt="WeTransfer - " />
+                                  <img src="https://www.fillmurray.com/40/40" alt="logo" width="34" style="display: block;" />
                                 </a>
                               </td>
                             </tr>
                           </table>
                         </td>
-                        <td align="right" width="70%">
+                        <td align="right" width="85%">
                           <table border="0" cellpadding="0" cellspacing="0" width="100%">
                             <tr>
                               <td class="rightColumnContent">
-                                <p style="max-width: 390px; font-family: arial, helvetica, sans-serif; font-size: 14px; text-align: right; color: #17181A;">Unexpected stories about creative minds. <br/>Curated and created by <a href="https://wetransfer.com/" style="color: #17181A">WeTransfer</a>.</p>
+                                <p style="max-width: 540px; font-family: arial, helvetica, sans-serif; font-size: 14px; text-align: right; color: #ffffff;">Some cool text here.</p>
                               </td>
                             </tr>
                           </table>
@@ -90,55 +94,45 @@
                 <!--END COLUMN-->
                 <!--START HERO IMAGE-->
                 <tr>
-                  <td align="center" style="padding: 40px 0 15px 0;">
-                    <img src="https://www.fillmurray.com/500/300" width="560" alt="jose roda" style="display: block; border: 0px; outline: none; height: auto;" />
+                  <td align="center" style="padding: 40px 15px 10px 15px;">
+                    <img class="hero" src="https://www.fillmurray.com/700/300" width="400" alt="wetransfer inbox" style="display: block; border: 0px; outline: none; height: auto;" />
                   </td>
                 </tr>
                 <!--END HERO IMAGE-->
-                <!--START HEADER TEXT-->
+                <!--START HERO TEXT-->
                 <tr>
-                  <td align="center" width="560" style="padding: 20px 15px 0px 15px; text-align: left;">
-                    <table align="left" cellpadding="0" cellspacing="0" width="100%">
-                      <tr style="text-align: left;">
-                        <td>
-                          <p style="font-size: 18px; color: #8F8A87;">A cheeseburger is more than just a sandwich, it is a wish fulfilled.</p>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-              </tr>
-              <!--END HEADER TEXT-->
-          </table>
-          </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <!--END HEADER-->
-      
-    <!--START FEATURE -->
-    <tr>
-      <td style="background-color: #FFFFFF; padding: 50px 0 50px 0">
-        <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;">
-          <tr>
-            <td align="center" style="padding: 20px 15px 10px 0; text-align: left;">
-              <table align="left" width="560" cellpadding="0" cellspacing="0">
-                <tr style="text-align: left;">
-                  <td align="left" style="padding: 20px 15px 10px 15px; font-size: 22px;">
-                    <p style="font-family: arial, helvetica, sans-serif; color: #17181A;">
-                      We are lucky to live in a glorious age that gives us everything we could ask for as a human race. What more could you need when you have meat covered in cheese nestled between bread as a complete meal.
-                    </p>
-                    <p style="font-family: arial, helvetica, sans-serif; color: #17181A;">
-                      From smashed patties at Shake Shack to Glamburgers at Honky Tonk, there’s a little something for everyone. Some burgers are humble, and some are ostentatious, and you just have to try them all to figure out what you want.
-                    </p>
+                  <td align="left" width="640" style="padding: 20px 15px 10px 15px;">
+                       <p style="font-family: arial, helvetica, sans-serif; color: #ffffff;">
+                        Think of cheeseburgers like a Tinder match.
+                      </p>
                   </td>
                 </tr>
+                <!--END HERO TEXT-->
               </table>
             </td>
           </tr>
         </table>
       </td>
     </tr>
+    <!--START BODY TEXT -->
+    <tr>
+      <td align="center">
+        <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+          <tr>
+            <td align="left" width="600" style="padding: 60px 15px 50px 15px; font-size: 20px;">
+              <p style="font-family: arial, helvetica, sans-serif;">
+                Think of cheeseburgers like a Tinder match. They might not all be your soulmate but you’ve gotta find out to be sure. It can get a little messy and that’s just part of the fun.
+                <br/><br/>
+                Some are cheesy, others can be a little dry, and the rare few are a disaster. There are so many cheeseburgers out there it can be hard to commit to just one favourite. That being said, when you know, you just know.
+                <br/><br/>
+                Everyone has their perfect match. Sometimes it’s just around the corner, other times you have to travel the world in search of it. Wherever your perfect cheeseburger is, it’s out there.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <!--END BODY TEXT -->
     <!--START BUTTON -->
     <tr>
       <td>
@@ -149,15 +143,15 @@
               <table width="100%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                   <td>
-                    <div style="margin-bottom: 30px;">
+                    <div>
                       <!--mso button fix doesn't work on 2000, 2002 and 2003-->
                       <!--[if mso]>
-                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://wepresent.wetransfer.com" style="height:46px;v-text-anchor:middle;width:200px;" arcsize="50%" strokecolor="#409FFF" fillcolor="#409FFF">
+                        <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://www.google.com/" style="height:46px;v-text-anchor:middle;width:200px;" arcsize="50%" strokecolor="#409FFF" fillcolor="#409FFF">
                           <w:anchorlock/>
-                          <center style="color:#ffffff;font-family:Arial, Helvetica,sans-serif;font-size:16px;">Click me</center>
+                          <center style="color:#ffffff;font-family: Arial, Helvetica,sans-serif;font-size:16px;">Button Text</center>
                         </v:roundrect>
                       <![endif]-->
-                      <a href="http://wepresent.wetransfer.com" style="background-color:#409FFF;border:1px solid #409FFF;border-radius:50px;color:#ffffff;display:inline-block;font-family:fakt pro, arial, helvetica, sans-serif;font-size:16px;line-height:44px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">Click me</a>
+                      <a href="https://www.google.com/" style="background-color:#409FFF;border:1px solid #409FFF;border-radius:50px;color:#ffffff;display:inline-block;font-family: arial, helvetica, sans-serif;font-size:16px;line-height:44px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;mso-hide:all;">Button Text</a>
                     </div>
                   </td>
                 </tr>
@@ -169,170 +163,37 @@
       </td>
     </tr>
     <!--END BUTTON -->
-    <!--START COLUMN-->
-    <tr>
-      <td>
-        <table align="center" cellpadding="0" cellspacing="0" width="100%">
-          <tr>
-            <td>
-              <table align="center" width="560" cellpadding="0" cellspacing="0" style="padding: 30px 0 30px 0;">
-                <tr>
-                  <td>
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td align="left">
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td class="leftColumnContent" align="left">
-                                <img src="https://www.fillmurray.com/300/200" />
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td align="right">
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td class="rightColumnContent" align="right">
-                                <img src="https://www.fillmurray.com/200/200" />
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <!--END COLUMN-->
-    <!--START COLUMN-->
-    <tr>
-      <td>
-        <table align="center" cellpadding="0" cellspacing="0" width="100%">
-          <tr>
-            <td>
-              <table align="center" width="560" cellpadding="0" cellspacing="0" style="padding: 30px 0 30px 0;">
-                <tr>
-                  <td>
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td align="left">
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                            <tr>
-                              <td class="leftColumnContent" align="left">
-                                <img src="https://www.fillmurray.com/200/200" />
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td align="right">
-                          <table border="0" cellpadding="5" cellspacing="0" width="100%">
-                            <tr>
-                              <td class="rightColumnContent" align="center">
-                                <p>The palatable sensation we lovingly refer to as The Cheeseburger has a distinguished and illustrious history.</p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-    <!--END COLUMN-->
-    <!--START FEATURE SECTION ONE-->
-    <tr>
-      <td style="padding: 20px 0 20px 0">
-        <table border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;">
-          <!--START FEATURE IMAGE-->
-          <tr>
-            <td align="center" style="padding: 0 15px 0 20px;">
-              <a href="https://wepresent.wetransfer.com/story/trevor-noah-alex-grigg?utm_source=newsletter&amp;utm_medium=mail&amp;utm_campaign=wp_wp_news1/">
-                <img src="https://www.fillmurray.com/500/300" width="560" alt="alex griggs" style="display: block; border: 0px; outline: none; height: auto;" />
-              </a>
-            </td>
-          </tr>
-          <!--END FEATURE IMAGE-->
-          <!--START FEATURE TEXT-->
-          <tr>
-            <td align="center">
-              <table>
-                <tbody>
-                  <tr>
-                    <td width="475" style="padding: 40px 15px 30px 15px;">
-                      <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
-                        <tr>
-                          <td align="center">
-                            <p style="font-family:fakt pro, arial, helvetica, sans-serif;">
-                              <a style="font-size: 22px; text-decoration: none;" href="https://wepresent.wetransfer.com/story/trevor-noah-alex-grigg?utm_source=newsletter&amp;utm_medium=mail&amp;utm_campaign=wp_wp_news1/">The last time you had a cheeseburger was too long ago.</a><br/>
-                            </p>
-                            <p style="font-family: arial, helvetica, sans-serif; font-size: 18px; color: #17181A;">
-                              The palatable sensation we lovingly refer to as The Cheeseburger has a distinguished and illustrious history. It was born from humble roots, only to rise to well-seasoned greatness. <br />
-                            </p>
-                            <p style="font-family: arial, helvetica, sans-serif; font-size: 18px; color: #17181A;">
-                                Picked by Spongebob Squarepants
-                            </p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </td>
-          </tr>
-          <!--END FEATURE TEXT-->
-        </table>
-      </td>
-    </tr>
-    <!--END FEATURE SECTION ONE-->
-    
-    <!--END FEATURE -->
-      
     <!--START FOOTER-->
+    <!--START SIGNATURE-->
+    <tr>
+      <td align="center">
+        <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+          <tr>
+            <td align="center" width="600" style="padding: 50px 15px 60px 15px; font-size: 20px;">
+              <p style="font-family: arial, helvetica, sans-serif;">Goodbye</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <!--END SIGNATURE-->
+    <!--START FOOTER TEXT-->
     <tr>
       <td>
-        <table class="footer" align="center" cellpadding="0" cellspacing="0" width="100%" style="background-color: #281524;">
+        <table class="footer" align="center" cellpadding="0" cellspacing="0" width="100%" style="background-color: #484848;">
           <!--START FOOTER LOGO-->
           <tr>
             <td align="center" style="padding: 30px 0 10px 0;">
               <a href="https://wetransfer.com/">
-                <img src="https://marketing-image-production.s3.amazonaws.com/uploads/2175f56a57acfb44eaa03fa27e3100b9e90492cfc5d59c8e24279342497cc08af4b35158c912c54a5591f25547757e829b6d6689f315b4c759dc9a5a395083da.png" alt="wetransfer logo" width="44" style="display: block;" />
+                <img src="https://www.fillmurray.com/40/40" alt="logo" width="44" style="display: block;" />
                 </a>
             </td>
           </tr>
           <!--END FOOTER LOGO-->
-          <!--START FOOTER TEXT-->
-          <tr>
-            <td align="center" style="padding: 10px 15px 50px 15px;">
-              <table border="0" cellpadding="0" cellspacing="0" style="margin:0 auto;">
-                <tr>
-                  <td align="center" width="500" style="padding: 20px 15px 50px 15px;">
-                    <p style="font-family: arial, helvetica, sans-serif; padding: 0 0 40px 0; color: #FFFFFF; font-size: 22px;">Send big files, share big ideas. <br/> <a style="color: #FFFFFF" href="http://www.wetransfer.com">WeTransfer</a>. Simple. Safe. Stylish. <br/> Follow us on
-                      <a style="color: #FFFFFF" href="https://twitter.com/WeTransfer?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a>, <a style="color: #FFFFFF" href="https://www.facebook.com/wetransfer/">Facebook</a> & <a style="color: #FFFFFF" href="https://www.instagram.com/wetransfer/">Instagram</a>.</p>
-                    <p style="font-family: arial, helvetica, sans-serif; color: #6F7785; font-size: 14px;">Something not quite right? <a href="[weblink]" style="color: #6F7785;">View this as a web page</a>.<br/>
-                      You received this because you subscribed to updates from WeTransfer (legend).&nbsp;No longer a legend? Click <a href="[Unsubscribe]" style="color: #6F7785;">here</a> to unsubscribe.<br/><br/>
-                      Oostelijke Handelskade 751, 1019 BW Amsterdam, NL<br/>
-                      2116 Zeno Pl, Venice, CA 90291, USA
-                      (Send snacks.)</p>
-                  </td>
-                  </tr>
-              </table>
-            </td>
-          </tr>
-          <!--END FOOTER TEXT-->
         </table>
       </td>
     </tr>
+    <!--END FOOTER TEXT-->
     <!--END FOOTER-->
   </table>
   <!--END EMAIL CONTENT-->
